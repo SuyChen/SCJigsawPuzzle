@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20E265BE221695F1006298C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E265BD221695F1006298C4 /* AppDelegate.m */; };
+		20E265C1221695F1006298C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E265C0221695F1006298C4 /* ViewController.m */; };
+		20E265C4221695F1006298C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20E265C2221695F1006298C4 /* Main.storyboard */; };
+		20E265C6221695F3006298C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E265C5221695F3006298C4 /* Assets.xcassets */; };
+		20E265C9221695F3006298C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20E265C7221695F3006298C4 /* LaunchScreen.storyboard */; };
+		20E265CC221695F3006298C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E265CB221695F3006298C4 /* main.m */; };
+		20E265D6221695F3006298C4 /* SuyChenPuzzleDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E265D5221695F3006298C4 /* SuyChenPuzzleDemoTests.m */; };
+		20E265E1221695F3006298C4 /* SuyChenPuzzleDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E265E0221695F3006298C4 /* SuyChenPuzzleDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20E265D2221695F3006298C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20E265B1221695F1006298C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20E265B8221695F1006298C4;
+			remoteInfo = SuyChenPuzzleDemo;
+		};
+		20E265DD221695F3006298C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20E265B1221695F1006298C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20E265B8221695F1006298C4;
+			remoteInfo = SuyChenPuzzleDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20E265B9221695F1006298C4 /* SuyChenPuzzleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuyChenPuzzleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E265BC221695F1006298C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		20E265BD221695F1006298C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		20E265BF221695F1006298C4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		20E265C0221695F1006298C4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		20E265C3221695F1006298C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20E265C5221695F3006298C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20E265C8221695F3006298C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20E265CA221695F3006298C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20E265CB221695F3006298C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		20E265D1221695F3006298C4 /* SuyChenPuzzleDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuyChenPuzzleDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E265D5221695F3006298C4 /* SuyChenPuzzleDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuyChenPuzzleDemoTests.m; sourceTree = "<group>"; };
+		20E265D7221695F3006298C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20E265DC221695F3006298C4 /* SuyChenPuzzleDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuyChenPuzzleDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E265E0221695F3006298C4 /* SuyChenPuzzleDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuyChenPuzzleDemoUITests.m; sourceTree = "<group>"; };
+		20E265E2221695F3006298C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20E265B6221695F1006298C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E265CE221695F3006298C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E265D9221695F3006298C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20E265B0221695F1006298C4 = {
+			isa = PBXGroup;
+			children = (
+				20E265BB221695F1006298C4 /* SuyChenPuzzleDemo */,
+				20E265D4221695F3006298C4 /* SuyChenPuzzleDemoTests */,
+				20E265DF221695F3006298C4 /* SuyChenPuzzleDemoUITests */,
+				20E265BA221695F1006298C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20E265BA221695F1006298C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20E265B9221695F1006298C4 /* SuyChenPuzzleDemo.app */,
+				20E265D1221695F3006298C4 /* SuyChenPuzzleDemoTests.xctest */,
+				20E265DC221695F3006298C4 /* SuyChenPuzzleDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20E265BB221695F1006298C4 /* SuyChenPuzzleDemo */ = {
+			isa = PBXGroup;
+			children = (
+				20E265BC221695F1006298C4 /* AppDelegate.h */,
+				20E265BD221695F1006298C4 /* AppDelegate.m */,
+				20E265BF221695F1006298C4 /* ViewController.h */,
+				20E265C0221695F1006298C4 /* ViewController.m */,
+				20E265C2221695F1006298C4 /* Main.storyboard */,
+				20E265C5221695F3006298C4 /* Assets.xcassets */,
+				20E265C7221695F3006298C4 /* LaunchScreen.storyboard */,
+				20E265CA221695F3006298C4 /* Info.plist */,
+				20E265CB221695F3006298C4 /* main.m */,
+			);
+			path = SuyChenPuzzleDemo;
+			sourceTree = "<group>";
+		};
+		20E265D4221695F3006298C4 /* SuyChenPuzzleDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				20E265D5221695F3006298C4 /* SuyChenPuzzleDemoTests.m */,
+				20E265D7221695F3006298C4 /* Info.plist */,
+			);
+			path = SuyChenPuzzleDemoTests;
+			sourceTree = "<group>";
+		};
+		20E265DF221695F3006298C4 /* SuyChenPuzzleDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				20E265E0221695F3006298C4 /* SuyChenPuzzleDemoUITests.m */,
+				20E265E2221695F3006298C4 /* Info.plist */,
+			);
+			path = SuyChenPuzzleDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20E265B8221695F1006298C4 /* SuyChenPuzzleDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20E265E5221695F3006298C4 /* Build configuration list for PBXNativeTarget "SuyChenPuzzleDemo" */;
+			buildPhases = (
+				20E265B5221695F1006298C4 /* Sources */,
+				20E265B6221695F1006298C4 /* Frameworks */,
+				20E265B7221695F1006298C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuyChenPuzzleDemo;
+			productName = SuyChenPuzzleDemo;
+			productReference = 20E265B9221695F1006298C4 /* SuyChenPuzzleDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20E265D0221695F3006298C4 /* SuyChenPuzzleDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20E265E8221695F3006298C4 /* Build configuration list for PBXNativeTarget "SuyChenPuzzleDemoTests" */;
+			buildPhases = (
+				20E265CD221695F3006298C4 /* Sources */,
+				20E265CE221695F3006298C4 /* Frameworks */,
+				20E265CF221695F3006298C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20E265D3221695F3006298C4 /* PBXTargetDependency */,
+			);
+			name = SuyChenPuzzleDemoTests;
+			productName = SuyChenPuzzleDemoTests;
+			productReference = 20E265D1221695F3006298C4 /* SuyChenPuzzleDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		20E265DB221695F3006298C4 /* SuyChenPuzzleDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20E265EB221695F3006298C4 /* Build configuration list for PBXNativeTarget "SuyChenPuzzleDemoUITests" */;
+			buildPhases = (
+				20E265D8221695F3006298C4 /* Sources */,
+				20E265D9221695F3006298C4 /* Frameworks */,
+				20E265DA221695F3006298C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20E265DE221695F3006298C4 /* PBXTargetDependency */,
+			);
+			name = SuyChenPuzzleDemoUITests;
+			productName = SuyChenPuzzleDemoUITests;
+			productReference = 20E265DC221695F3006298C4 /* SuyChenPuzzleDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20E265B1221695F1006298C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = suychen;
+				TargetAttributes = {
+					20E265B8221695F1006298C4 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					20E265D0221695F3006298C4 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 20E265B8221695F1006298C4;
+					};
+					20E265DB221695F3006298C4 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 20E265B8221695F1006298C4;
+					};
+				};
+			};
+			buildConfigurationList = 20E265B4221695F1006298C4 /* Build configuration list for PBXProject "SuyChenPuzzleDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20E265B0221695F1006298C4;
+			productRefGroup = 20E265BA221695F1006298C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20E265B8221695F1006298C4 /* SuyChenPuzzleDemo */,
+				20E265D0221695F3006298C4 /* SuyChenPuzzleDemoTests */,
+				20E265DB221695F3006298C4 /* SuyChenPuzzleDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20E265B7221695F1006298C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E265C9221695F3006298C4 /* LaunchScreen.storyboard in Resources */,
+				20E265C6221695F3006298C4 /* Assets.xcassets in Resources */,
+				20E265C4221695F1006298C4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E265CF221695F3006298C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E265DA221695F3006298C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20E265B5221695F1006298C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E265C1221695F1006298C4 /* ViewController.m in Sources */,
+				20E265CC221695F3006298C4 /* main.m in Sources */,
+				20E265BE221695F1006298C4 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E265CD221695F3006298C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E265D6221695F3006298C4 /* SuyChenPuzzleDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E265D8221695F3006298C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E265E1221695F3006298C4 /* SuyChenPuzzleDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20E265D3221695F3006298C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20E265B8221695F1006298C4 /* SuyChenPuzzleDemo */;
+			targetProxy = 20E265D2221695F3006298C4 /* PBXContainerItemProxy */;
+		};
+		20E265DE221695F3006298C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20E265B8221695F1006298C4 /* SuyChenPuzzleDemo */;
+			targetProxy = 20E265DD221695F3006298C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20E265C2221695F1006298C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20E265C3221695F1006298C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		20E265C7221695F3006298C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20E265C8221695F3006298C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20E265E3221695F3006298C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		20E265E4221695F3006298C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20E265E6221695F3006298C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SuyChenPuzzleDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.suychen.SuyChenPuzzleDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20E265E7221695F3006298C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SuyChenPuzzleDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.suychen.SuyChenPuzzleDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		20E265E9221695F3006298C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SuyChenPuzzleDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.suychen.SuyChenPuzzleDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuyChenPuzzleDemo.app/SuyChenPuzzleDemo";
+			};
+			name = Debug;
+		};
+		20E265EA221695F3006298C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SuyChenPuzzleDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.suychen.SuyChenPuzzleDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuyChenPuzzleDemo.app/SuyChenPuzzleDemo";
+			};
+			name = Release;
+		};
+		20E265EC221695F3006298C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SuyChenPuzzleDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.suychen.SuyChenPuzzleDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SuyChenPuzzleDemo;
+			};
+			name = Debug;
+		};
+		20E265ED221695F3006298C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SuyChenPuzzleDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.suychen.SuyChenPuzzleDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SuyChenPuzzleDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20E265B4221695F1006298C4 /* Build configuration list for PBXProject "SuyChenPuzzleDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20E265E3221695F3006298C4 /* Debug */,
+				20E265E4221695F3006298C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20E265E5221695F3006298C4 /* Build configuration list for PBXNativeTarget "SuyChenPuzzleDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20E265E6221695F3006298C4 /* Debug */,
+				20E265E7221695F3006298C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20E265E8221695F3006298C4 /* Build configuration list for PBXNativeTarget "SuyChenPuzzleDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20E265E9221695F3006298C4 /* Debug */,
+				20E265EA221695F3006298C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20E265EB221695F3006298C4 /* Build configuration list for PBXNativeTarget "SuyChenPuzzleDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20E265EC221695F3006298C4 /* Debug */,
+				20E265ED221695F3006298C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20E265B1221695F1006298C4 /* Project object */;
+}
