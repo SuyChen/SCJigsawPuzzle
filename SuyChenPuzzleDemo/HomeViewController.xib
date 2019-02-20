@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="columnNum_lb" destination="l5c-rO-ege" id="d45-nR-mcb"/>
+                <outlet property="columnSlider" destination="FTQ-jE-X9f" id="VSS-j1-ZoU"/>
+                <outlet property="puzzle_btn" destination="bhN-2x-373" id="rs6-ft-Ho1"/>
+                <outlet property="rowNum_lb" destination="OOw-eg-gK8" id="AGs-GJ-ne9"/>
+                <outlet property="rowSlider" destination="ncd-Sy-elf" id="vqV-Mk-tQ3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhN-2x-373">
+                    <rect key="frame" x="37.5" y="113.5" width="300" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="CBv-bP-fli"/>
+                        <constraint firstAttribute="height" constant="300" id="ZUt-CL-zbB"/>
+                    </constraints>
+                    <state key="normal" image="puzzle"/>
+                    <connections>
+                        <action selector="startPuzzle:" destination="-1" eventType="touchUpInside" id="czI-aG-tp4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBI-Mh-XTc">
+                    <rect key="frame" x="155" y="463.5" width="65" height="65"/>
+                    <state key="normal" image="add"/>
+                    <connections>
+                        <action selector="addPhotos:" destination="-1" eventType="touchUpInside" id="CDZ-tA-z5R"/>
+                    </connections>
+                </button>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="ncd-Sy-elf">
+                    <rect key="frame" x="13" y="607" width="134" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="LTo-ug-vZ6"/>
+                    </constraints>
+                    <color key="minimumTrackTintColor" red="0.96078431369999995" green="0.36470588240000001" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="changeRowNum:" destination="-1" eventType="valueChanged" id="VvG-A2-b8X"/>
+                    </connections>
+                </slider>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="FTQ-jE-X9f">
+                    <rect key="frame" x="228" y="607" width="134" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="jQ4-9Q-xPn"/>
+                    </constraints>
+                    <color key="minimumTrackTintColor" red="0.96078431369999995" green="0.36470588240000001" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="changeColumnNum:" destination="-1" eventType="valueChanged" id="0ix-mR-jci"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Column:4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5c-rO-ege">
+                    <rect key="frame" x="258" y="556" width="74" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jigsaw Puzzle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJF-MV-xrI">
+                    <rect key="frame" x="108" y="61" width="159" height="32.5"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Row:4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOw-eg-gK8">
+                    <rect key="frame" x="56" y="556" width="48" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="FTQ-jE-X9f" secondAttribute="trailing" constant="15" id="1HY-2q-Dkh"/>
+                <constraint firstItem="bhN-2x-373" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="5rh-bR-FfJ"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="ncd-Sy-elf" secondAttribute="bottom" constant="30" id="95M-Uw-yiz"/>
+                <constraint firstItem="ncd-Sy-elf" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="C0B-XT-s1w"/>
+                <constraint firstItem="bhN-2x-373" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" constant="-80" id="HGI-LL-bRf"/>
+                <constraint firstItem="l5c-rO-ege" firstAttribute="centerX" secondItem="FTQ-jE-X9f" secondAttribute="centerX" id="MSj-Yy-ksk"/>
+                <constraint firstItem="bhN-2x-373" firstAttribute="top" secondItem="rJF-MV-xrI" secondAttribute="bottom" constant="20" id="VmI-xg-beE"/>
+                <constraint firstItem="OOw-eg-gK8" firstAttribute="centerX" secondItem="ncd-Sy-elf" secondAttribute="centerX" id="dUe-u6-9ac"/>
+                <constraint firstItem="lBI-Mh-XTc" firstAttribute="top" secondItem="bhN-2x-373" secondAttribute="bottom" constant="50" id="db6-Mv-jnX"/>
+                <constraint firstItem="FTQ-jE-X9f" firstAttribute="top" secondItem="l5c-rO-ege" secondAttribute="bottom" constant="30" id="jbV-iL-ntO"/>
+                <constraint firstItem="ncd-Sy-elf" firstAttribute="top" secondItem="OOw-eg-gK8" secondAttribute="bottom" constant="30" id="p0W-Uc-N1J"/>
+                <constraint firstItem="FTQ-jE-X9f" firstAttribute="centerY" secondItem="ncd-Sy-elf" secondAttribute="centerY" id="rMU-4n-w5R"/>
+                <constraint firstItem="lBI-Mh-XTc" firstAttribute="centerX" secondItem="bhN-2x-373" secondAttribute="centerX" id="wu7-nV-m8I"/>
+                <constraint firstItem="rJF-MV-xrI" firstAttribute="centerX" secondItem="bhN-2x-373" secondAttribute="centerX" id="zYy-AB-YSY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-370" y="27"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add" width="65" height="65"/>
+        <image name="puzzle" width="315" height="316"/>
+    </resources>
+</document>

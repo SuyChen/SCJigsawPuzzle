@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2029C0C5221D403700937B5E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2029C0C3221D403700937B5E /* HomeViewController.m */; };
+		2029C0C6221D403700937B5E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2029C0C4221D403700937B5E /* HomeViewController.xib */; };
+		20CEDFAC221D4F7A005C0799 /* PuzzleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CEDFAA221D4F7A005C0799 /* PuzzleViewController.m */; };
+		20CEDFAD221D4F7A005C0799 /* PuzzleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20CEDFAB221D4F7A005C0799 /* PuzzleViewController.xib */; };
 		20E265BE221695F1006298C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E265BD221695F1006298C4 /* AppDelegate.m */; };
-		20E265C1221695F1006298C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E265C0221695F1006298C4 /* ViewController.m */; };
 		20E265C4221695F1006298C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20E265C2221695F1006298C4 /* Main.storyboard */; };
 		20E265C6221695F3006298C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E265C5221695F3006298C4 /* Assets.xcassets */; };
 		20E265C9221695F3006298C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20E265C7221695F3006298C4 /* LaunchScreen.storyboard */; };
@@ -35,11 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2029C0C2221D403700937B5E /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		2029C0C3221D403700937B5E /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		2029C0C4221D403700937B5E /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		20CEDFA9221D4F7A005C0799 /* PuzzleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PuzzleViewController.h; sourceTree = "<group>"; };
+		20CEDFAA221D4F7A005C0799 /* PuzzleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PuzzleViewController.m; sourceTree = "<group>"; };
+		20CEDFAB221D4F7A005C0799 /* PuzzleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PuzzleViewController.xib; sourceTree = "<group>"; };
 		20E265B9221695F1006298C4 /* SuyChenPuzzleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuyChenPuzzleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E265BC221695F1006298C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		20E265BD221695F1006298C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		20E265BF221695F1006298C4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		20E265C0221695F1006298C4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		20E265C3221695F1006298C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20E265C5221695F3006298C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20E265C8221695F3006298C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,8 +110,12 @@
 			children = (
 				20E265BC221695F1006298C4 /* AppDelegate.h */,
 				20E265BD221695F1006298C4 /* AppDelegate.m */,
-				20E265BF221695F1006298C4 /* ViewController.h */,
-				20E265C0221695F1006298C4 /* ViewController.m */,
+				2029C0C2221D403700937B5E /* HomeViewController.h */,
+				2029C0C3221D403700937B5E /* HomeViewController.m */,
+				2029C0C4221D403700937B5E /* HomeViewController.xib */,
+				20CEDFA9221D4F7A005C0799 /* PuzzleViewController.h */,
+				20CEDFAA221D4F7A005C0799 /* PuzzleViewController.m */,
+				20CEDFAB221D4F7A005C0799 /* PuzzleViewController.xib */,
 				20E265C2221695F1006298C4 /* Main.storyboard */,
 				20E265C5221695F3006298C4 /* Assets.xcassets */,
 				20E265C7221695F3006298C4 /* LaunchScreen.storyboard */,
@@ -238,6 +249,8 @@
 				20E265C9221695F3006298C4 /* LaunchScreen.storyboard in Resources */,
 				20E265C6221695F3006298C4 /* Assets.xcassets in Resources */,
 				20E265C4221695F1006298C4 /* Main.storyboard in Resources */,
+				20CEDFAD221D4F7A005C0799 /* PuzzleViewController.xib in Resources */,
+				2029C0C6221D403700937B5E /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +275,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20E265C1221695F1006298C4 /* ViewController.m in Sources */,
 				20E265CC221695F3006298C4 /* main.m in Sources */,
 				20E265BE221695F1006298C4 /* AppDelegate.m in Sources */,
+				2029C0C5221D403700937B5E /* HomeViewController.m in Sources */,
+				20CEDFAC221D4F7A005C0799 /* PuzzleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +450,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F9ZPHPN49;
 				INFOPLIST_FILE = SuyChenPuzzleDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +468,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F9ZPHPN49;
 				INFOPLIST_FILE = SuyChenPuzzleDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
