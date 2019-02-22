@@ -3,7 +3,7 @@
 
 ### 效果图
 
-<iframe height=667 width=375 src="SuyChenPuzzleDemo/Puzzle.mov">
+[![](Puzzle.mov)]
 
 ### 项目特点
 
