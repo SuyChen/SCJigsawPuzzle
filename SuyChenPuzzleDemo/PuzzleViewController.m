@@ -51,6 +51,7 @@ typedef NS_ENUM(NSUInteger, SCPieceSideType) {
 @property (nonatomic, strong) UIView* puzzleBoard;
 //全部拼图
 @property (nonatomic, strong) NSMutableArray* allPiecesArray;
+//根据这个基数设置曲线坐标
 @property (nonatomic, assign) CGFloat baseNum;
 
 @property (weak, nonatomic) IBOutlet UIButton *cancel_btn;
@@ -62,9 +63,8 @@ typedef NS_ENUM(NSUInteger, SCPieceSideType) {
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
     [self initData];
-    
+
     [self initUI];
     
     [self setUpPeaceCoordinatesTypesAndRotationValuesArrays];
@@ -81,9 +81,26 @@ typedef NS_ENUM(NSUInteger, SCPieceSideType) {
     [self.view bringSubviewToFront:self.cancel_btn];
     
 }
+- (void)initData
+{
+    self.SCPieceTypeArray = [NSMutableArray array];
+    self.pieceCoordinateRectArray = [NSMutableArray array];
+    self.pieceRotationArray = [NSMutableArray array];
+    self.pieceBezierPathsMutArray = [NSMutableArray array];
+    self.allPiecesArray = [NSMutableArray array];
+    //这个是按原比例尺寸缩放
+    //    CGFloat scale = self.originalCatImage.size.height / self.originalCatImage.size.width;
+    //固定宽度按比例缩放
+    self.originalCatImage =  [self image:self.originalCatImage ByScalingToSize:CGSizeMake(SC_WIDTH, SC_WIDTH/self.pieceHCount*self.pieceVCount)];
+    //这里必须保证方块是正方形
+    self.cubeHeightValue = self.originalCatImage.size.height / self.pieceVCount;
+    self.cubeWidthValue = self.originalCatImage.size.width / self.pieceHCount;
+    self.baseNum = 8 * self.originalCatImage.size.width / self.pieceHCount / (192 - 32);
+    self.deepnessH = - (4 * self.baseNum);
+    self.deepnessV = - (4 * self.baseNum);
+}
 - (void)initUI
 {
-    
     self.puzzleBoard = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.originalCatImage.size.width, self.originalCatImage.size.height)];
     //    self.puzzleBoard.backgroundColor = [UIColor redColor];
     UIImageView *bgImage = [[UIImageView alloc] initWithImage:self.originalCatImage];
@@ -92,27 +109,6 @@ typedef NS_ENUM(NSUInteger, SCPieceSideType) {
     self.puzzleBoard.center = CGPointMake(SC_WIDTH / 2, SC_HEIGHT / 2);
     bgImage.alpha = 0.3;
     
-}
-
-/** 设置初始化数据 */
-- (void)initData
-{
-    self.SCPieceTypeArray = [NSMutableArray array];
-    self.pieceCoordinateRectArray = [NSMutableArray array];
-    self.pieceRotationArray = [NSMutableArray array];
-    self.pieceBezierPathsMutArray = [NSMutableArray array];
-    self.allPiecesArray = [NSMutableArray array];
-//    self.pieceHCount = 5;
-//    self.pieceVCount = 5;
-//    self.originalCatImage = [UIImage imageNamed:@"puzzle"];
-//    CGFloat scale = self.originalCatImage.size.height / self.originalCatImage.size.width;
-    self.originalCatImage =  [self image:self.originalCatImage ByScalingToSize:CGSizeMake(SC_WIDTH, SC_WIDTH/self.pieceHCount*self.pieceVCount)];
-    //这里必须保证方块是正方形
-    self.cubeHeightValue = self.originalCatImage.size.height / self.pieceVCount;
-    self.cubeWidthValue = self.originalCatImage.size.width / self.pieceHCount;
-    self.baseNum = 8 * self.originalCatImage.size.width / self.pieceHCount / (192 - 32);
-    self.deepnessH = - (4 * self.baseNum);
-    self.deepnessV = - (4 * self.baseNum);
 }
 /** 设置Piece切片的类型，坐标，以及方向 */
 - (void)setUpPeaceCoordinatesTypesAndRotationValuesArrays
